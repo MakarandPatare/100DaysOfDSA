@@ -13,10 +13,10 @@ object IsUnique {
       // Assumption: String is ASCII (So, only 128 different characters possible)
       // HashMap along with lookup can also be used instead of an array of Boolean
       val charSet = new Array[Boolean](128)
-      for (i <- 0 until s.length) {
-        if (charSet(s(i)) == true)
+      for (char <- s) {
+        if (charSet(char) == true)
           return false
-        charSet(s(i)) = true
+        charSet(char) = true
       }
     }
     return true
