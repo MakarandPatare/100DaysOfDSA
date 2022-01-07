@@ -1,4 +1,4 @@
-package Arrays
+package LeetCode.Arrays
 
 /**
  * 3. Longest Substring Without Repeating Characters

@@ -1,4 +1,4 @@
-package Arrays
+package LeetCode.Arrays
 
 object ContainerWithMostWater {
   def maxArea(height: Array[Int]): Int = {

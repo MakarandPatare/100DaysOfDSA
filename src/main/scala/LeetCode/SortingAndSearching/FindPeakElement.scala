@@ -1,4 +1,4 @@
-package SortingAndSearching
+package LeetCode.SortingAndSearching
 
 /**
  * A peak element is an element that is strictly greater than its neighbors.
