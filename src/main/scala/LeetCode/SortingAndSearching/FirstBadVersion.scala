@@ -31,6 +31,10 @@ Constraints:
 /* The isBadVersion API is defined in the parent class VersionControl.
       def isBadVersion(version: Int): Boolean = {} */
 
+trait VersionControl {
+  def isBadVersion(version: Int): Boolean = ???
+}
+
 object FirstBadVersion extends VersionControl {
   def firstBadVersion(n: Int): Int = {
     var left = 1
