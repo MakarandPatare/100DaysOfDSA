@@ -11,7 +11,7 @@ package CrackingCodingInterview189Book.Chapter1ArraysAndStrings
 object URLify {
   def urlIfy(s: Array[Char], trueLength: Int): Array[Char] = {
     if (s.isEmpty) return s
-    // Assuming length is accurate. Otherwise, we need to calculate number of spaces first for knowing the pointerFromEnd
+    // Assumption: Length of array is accurate. Otherwise, we need to calculate number of spaces first for knowing the pointerFromEnd
     var pointerFromEnd = s.length - 1
     for (cp <- trueLength - 1 to 0 by -1) {
       if (s(cp) == ' ') {
