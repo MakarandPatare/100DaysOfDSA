@@ -15,10 +15,10 @@ object PalindromePermutation {
   def palindromePermutation(s: String): Boolean = {
     // Another approach is adding elements to HashMap[Char, Int] where we need to make sure at most one element has odd count
     // HashSet approach is more performant as it saves us from the unnecessary iteration through HashMap.
-    val map = new mutable.HashSet[Char]()
+    val set = new mutable.HashSet[Char]()
     for (c <- s)
       if (c != ' ')
-        if (map.contains(c.toLower)) map.remove(c.toLower) else map.add(c.toLower)
-    if (List(0, 1).contains(map.size)) true else false
+        if (set.contains(c.toLower)) set.remove(c.toLower) else set.add(c.toLower)
+    if (List(0, 1).contains(set.size)) true else false
   }
 }
