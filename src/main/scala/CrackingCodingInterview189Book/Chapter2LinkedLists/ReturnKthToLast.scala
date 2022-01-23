@@ -7,11 +7,6 @@ import scala.collection.mutable.ListBuffer
  * Implement an algorithm to find the kth to last element of a singly linked list
  */
 
-case class ListNode[T](xc: T) {
-  var value: T = xc
-  var next: ListNode[T] = null
-}
-
 object ReturnKthToLast {
   def kthToLast(k: Int, list: ListNode[Int]): Int = {
     var bigNode = list
