@@ -1,5 +1,7 @@
 package Blind75.DynamicProgramming
 
+import scala.collection.mutable
+
 /**
  * You are climbing a staircase. It takes n steps to reach the top.
 
@@ -37,9 +39,9 @@ class ClimbingStairs {
       dp(2) = 2
       for (i <- 3 to n)
         dp(i) = dp(i - 1) + dp(i - 2)
-        dp(n)
+      dp(n)
     }
-    dp(n)
+//    dp(n)
   }
   // Top down call dp(n)
 //  def dp(n: Int): Int = {
