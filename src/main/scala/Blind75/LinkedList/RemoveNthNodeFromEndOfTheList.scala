@@ -31,6 +31,12 @@ The number of nodes in the list is sz.
 Follow up: Could you do this in one pass?
 
  */
+
+class ListNode(var _x: Int = 0) {
+  var next: ListNode = null
+  var x: Int = _x
+}
+
 object RemoveNthNodeFromEndOfTheList {
   def removeNthFromEnd(head: ListNode, n: Int): ListNode = {
     if (head == null || (head.next == null && n == 1)) return null

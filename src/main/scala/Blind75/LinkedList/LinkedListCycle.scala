@@ -39,6 +39,11 @@ pos is -1 or a valid index in the linked-list.
 Follow up: Can you solve it using O(1) (i.e. constant) memory?
  */
 
+class ListNode(var _x: Int = 0) {
+  var next: ListNode = null
+  var x: Int = _x
+}
+
 object LinkedListCycle {
   def hasCycle(head: ListNode): Boolean = {
     if (head == null) return false
@@ -49,6 +54,6 @@ object LinkedListCycle {
       slow = slow.next
       fast = fast.next.next
     }
-    return true
+    true
   }
 }
