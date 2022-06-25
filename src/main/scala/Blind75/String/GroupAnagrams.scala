@@ -6,10 +6,10 @@ class GroupAnagrams {
     val ans: Map[String, List] = new HashMap[String, List]()
     // Assuming just 26 characters
     val count = new Array[Int](26)
-    for (str: strs) {
+    for (str <- strs) {
       count = Array.fill(0)
 
-      for (c: str) count(c - 'a') += 1
+      for (c <- str) count(c - 'a') += 1
 
       val sb = new StringBuilder("")
       for (i <- 0 until 128) {
@@ -20,7 +20,6 @@ class GroupAnagrams {
       if (!ans.containsKey(key)) ans.put(key, new ArrayList());
       ans.get(key).add(s);
     }
-    return new ArrayList(ans.values());
-    }
+    new ArrayList(ans.values());
   }
 }
